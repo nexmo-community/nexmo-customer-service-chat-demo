@@ -1,0 +1,9 @@
+<h1>Messages from <%= params[:id] %></h1>
+
+<div class="ui one cards">
+  <%= render 'form' %>
+</div>
+
+<div class="ui one cards thread">
+  <%= render @messages %>
+</div>

@@ -1,0 +1,16 @@
+<div class="content <%= message.inbound ? 'left' : 'right' %> aligned">
+  <div class="header">
+    <% if message.inbound %>
+      <i class='ui icon cloud download'></i> from
+    <% else %>
+      <i class='ui icon cloud upload'></i> to
+    <% end %>
+    <%= message.number %>
+  </div>
+  <div class="meta">
+    <span>
+      <%= time_ago_in_words message.created_at %> ago
+    </span>
+  </div>
+  <p><%= message.text %></p>
+</div>

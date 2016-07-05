@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Customer Service</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="ui menu fixed main inverted">
+      <a href='/' class="header item">
+        Customer Support
+      </a>
+    </div>
+    <div class="ui container">
+      <%= yield %>
+    </div>
+  </body>
+</html>

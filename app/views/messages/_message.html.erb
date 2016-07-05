@@ -1,0 +1,4 @@
+<%= link_to "/messages/#{message.number}",
+      class: 'ui card message' do %>
+  <%= render 'messages/detail', message: message %>
+<% end %>
