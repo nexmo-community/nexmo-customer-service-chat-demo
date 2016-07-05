@@ -15,7 +15,8 @@ class MessagesController < ApplicationController
     message.inbound = false
 
     if message.save
-      redirect_to "/messages/#{message.number}"
+      send_cable(message)
+      send_sms(message)
     end
   end
 

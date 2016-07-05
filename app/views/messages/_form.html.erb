@@ -1,6 +1,6 @@
 <div class="ui card">
   <div class="content">
-    <%= form_for(@new_message, html: { class: 'ui form error' }) do |f| %>
+    <%= form_for(@new_message, remote: true, html: { class: 'ui form error' }) do |f| %>
       <%= f.hidden_field :number %>
       <div class="field">
         <%= f.text_area :text, rows: 3 %>

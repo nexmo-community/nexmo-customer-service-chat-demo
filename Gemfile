@@ -9,6 +9,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
+gem 'nexmo'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-semantic'
@@ -16,6 +17,7 @@ end
 
 group :development, :test do
   gem 'byebug', platform: :mri
+  gem 'dotenv-rails'
 end
 
 group :development do
